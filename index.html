@@ -715,6 +715,20 @@ body.hc[data-t=cinza]{--g:#D6DADF;--s2:#6C7178;--s3:#868B93}
 .swap{text-align:center;color:var(--g);font-size:14px;margin-top:20px}
 .swap button{color:var(--o);font-weight:700;padding:0 0 0 6px;font-size:14px}.swap button:hover{text-decoration:underline}
 @media(max-width:900px){.feat{display:none}.hero .tg{font-size:20px;text-align:center;max-width:18em}.authc{padding:24px;border-radius:18px}}
+
+/* ===== RESPIRO NAS BORDAS =====
+   Só conteúdo solto ganha margem lateral. Fica de borda a borda por design:
+   barra lateral, barra superior/inferior, capa do perfil, abas, cartões planos,
+   chat em tela cheia, galeria de imagens e gaveta do menu. */
+.ph{padding-left:16px;padding-right:16px}
+.sh{padding-left:16px;padding-right:16px}
+main>:not(.top)>:is(p,.row.wrap,.row.sp:not(.ph),.ld){margin-left:16px;margin-right:16px}
+main>:not(.top)>:is(input,select,textarea,.btn.lg){margin-left:16px;margin-right:16px;width:calc(100% - 32px)}
+main>:not(.top)>.card.prem{margin:0 16px 16px;border-radius:16px;padding:20px}
+main>:not(.top)>.card.prem .btn.lg{width:100%;margin:0}
+main>:not(.top)>.empty{padding-left:24px;padding-right:24px}
+.fsm .lst{padding:0 14px 12px}.lsth{padding-left:6px;padding-right:6px}.lh{padding-left:4px;padding-right:4px}
+@media(max-width:900px){.mo{padding:0}.md{padding-left:20px;padding-right:20px}}
 </style>
 </head>
 <body data-t="claro">
